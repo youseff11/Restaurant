@@ -1,0 +1,110 @@
+body{
+    background-color: #0c1022;
+    color: white;
+
+}
+.box1_container{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.box1_container{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    /* max-width: 400px;
+    max-height: 470px; */
+    background: #040717;
+    border-radius: 50px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box1_container::before {
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    content: '';
+    background-image: conic-gradient(transparent, transparent, transparent, #ee00ff);
+    animation: rotate_border 6s linear infinite;
+}
+.box1_container::after {
+    position: absolute;
+    width: 170%;
+    height: 170%;
+    content: '';
+    background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
+    animation: rotate_border 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes rotate_border {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+    .box1 {
+    position: absolute;
+    content: '';
+    background-color: #0c1022;
+    border-radius: 50px 5px;
+    inset: 5px;
+    padding: 50px 40px;
+    z-index: 10;
+    color: #00ccff;
+  }
+
+  .navbar-nav {
+    display: flex; /* استخدام flexbox */
+    justify-content: center; /* محاذاة الروابط في المنتصف */
+    align-items: center; /* محاذاة العناصر رأسياً في المنتصف */
+    width: 100%; /* تأكد من أن الحاوية تستخدم العرض الكامل */
+}
+
+.navbar-nav .nav-item {
+    padding: 0 10px; /* مسافة بين العناصر */
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7) !important; /* شفافية الخلفية */
+    color: white !important; 
+    box-shadow: none; 
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+}
+
+.navbar a {
+    color: #00ccff !important;
+    transition: color 0.4s ease;
+}
+
+.navbar a:hover {
+    opacity: 0.8; /* تأثير التمرير */
+}
+.img-box{
+    width: 400px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+}
+
+.img-box img{
+    border-radius: 50%;
+    width: 100%;
+}
+.txt-box{
+    margin-top: 2rem;
+    color: #00ccff !important;
+    text-align: left;
+    font-size: large;
+
+
+}

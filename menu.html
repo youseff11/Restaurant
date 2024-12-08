@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="home.css">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Joo's Restaurant</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+<style>
+     @media (min-width: 992px) {
+      .navbar {
+            font-size: larger;
+            padding: 10px;
+        }
+    
+    
+    
+        
+    }
+    @media (max-width: 991px) {
+      .cards{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: auto;
+        margin-right: auto;
+
+      }
+    }
+</style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="cards">
+      <div class="card" >
+        <img src="imags/10.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+         <p>Burger with Lettuce and Cheese - 12.5$
+        </div>
+      </div>
+
+      <div class="card" >
+        <img src="imags/11.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+         <p>Fried Chicken Drumsticks with Fries - 24.5$</p>
+        </div>
+      </div>
+
+      <div class="card" >
+        <img src="imags/12.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+         <p>Grilled Chicken with Vegetables - 12.8$</p>
+        </div>
+      </div>
+
+      <div class="card" >
+        <img src="imags/13.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+         <p>Roasted Chicken - 20$</p>
+        </div>
+      </div>
+
+      <div class="card" >
+        <img src="imags/14.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+         <p>Burger with Fries - 15$</p>
+        </div>
+      </div>
+
+      <div class="card" >
+        <img src="imags/15.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+         <p>Bowl of Shrimp Soup - 32$</p>
+        </div>
+      </div>
+
+      <div class="card" >
+        <img src="imags/16.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+         <p>Pizza with Olives, Onions, Tomatoes - 40$
+        </p>
+        </div>
+      </div>
+
+      <div class="card" >
+        <img src="imags/17.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+         <p>Pizza with Various Toppings - 32$
+        </p>
+        </div>
+      </div>
+
+      <div class="card" >
+        <img src="imags/18.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+         <p>Vegetable Topped Pizza - 37$
+        </p>
+        </div>
+      </div>
+
+      <div class="card" >
+        <img src="imags/19.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+         <p>Pepperoni Pizza - 21$
+        </p>
+        </div>
+      </div>
+
+      <div class="card" >
+        <img src="imags/20.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+         <p>Wrap with Meat and Vegetables - 22$
+        </p>
+        </div>
+      </div>
+
+      <div class="card" >
+        <img src="imags/21.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+         <p>Wraps with Fries and Tomatoes - 17$
+        </p>
+        </div>
+      </div>
+    </div>
+    <div id="cart">
+      <h3>Your Cart</h3>
+      <ul id="cart-items"></ul>
+      <p>Total: <span id="total-price">0</span>$</p>
+      <button id="show-bill-btn">Show Bill</button>
+    </div>
+    
+
+    
+    
+  </div>
+</body>
+<script src="menu.js"></script>
+<script src="bootstrap.bundle.min.js"></script>
+
+</html>

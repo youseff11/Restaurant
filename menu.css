@@ -1,0 +1,61 @@
+.cards{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 2rem;
+
+}
+.card{
+    margin-bottom: 1rem;
+}
+.card-img-top {
+    width: 100%; /* عرض الصورة يملأ الحاوية */
+    height: 200px; /* ارتفاع موحد */
+    object-fit: cover; /* لضمان ظهور الصور بشكل جيد داخل الحاوية */
+  }
+  .card:hover{
+    transform: scale(1.05);
+    transition: 0.4ms;
+  }
+  .card-body{
+    text-align: center;
+  }
+
+  #cart {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black;
+    background-color: #f9f9f9;
+}
+
+#cart h3 {
+    margin-bottom: 10px;
+}
+
+#cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+#cart ul li {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cart ul li button {
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+#cart p {
+    font-weight: bold;
+    margin-top: 10px;
+}
