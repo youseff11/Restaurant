@@ -59,3 +59,8 @@
     font-weight: bold;
     margin-top: 10px;
 }
+.navbar-toggler-icon{
+    background-color: #00ccff;
+    border-radius: 10px;
+}
+  
