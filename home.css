@@ -6,6 +6,8 @@ body{
 .box1_container{
     text-align: center;
     margin-top: 3rem;
+    width: 90%;
+
 }
 
 .box1_container{
@@ -105,6 +107,12 @@ body{
     color: #00ccff !important;
     text-align: left;
     font-size: large;
-
-
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
+.navbar-toggler-icon{
+    background-color: #00ccff;
+    border-radius: 10px;
+}
+  
